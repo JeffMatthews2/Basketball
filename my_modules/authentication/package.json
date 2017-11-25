@@ -1,0 +1,8 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "Re-usable module to handle authentication-related stuff.",
+  "main": "index.js",
+  "author": "Jeff Matthews",
+  "private": true
+}
