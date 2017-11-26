@@ -1,4 +1,5 @@
 var express = require('express');
+// var favicon = require('serve-favicon');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
@@ -12,7 +13,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
 // Connect to DB
-mongoose.connect('mongodb://admin:bball@ds119406.mlab.com:19406/basketball');
+mongoose.connect('mongodb://[username]:[pw]@[database]');
 
 
 var routes = require('./routes/index');
@@ -21,6 +22,8 @@ var scripts = require('./routes/scripts');
 
 // Init App
 var app = express();
+
+// app.use(favicon(__dirname + '/favicon.ico'));
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
