@@ -15,8 +15,6 @@ var mongoose = require('mongoose');
 // Connect to DB
 mongoose.connect('mongodb://[username]:[pw]@[database]');
 
-var jeff = 'me23';
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var scripts = require('./routes/scripts');
