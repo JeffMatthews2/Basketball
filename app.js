@@ -13,7 +13,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
 // Connect to DB
-mongoose.connect('mongodb://[username]:[pw]@[database]);
+mongoose.connect('mongodb://[username]:[pw]@[database]');
 
 
 var routes = require('./routes/index');
