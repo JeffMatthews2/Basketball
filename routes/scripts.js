@@ -10,5 +10,8 @@ router.get('/index.js', auth.ensureAuthenticated, function(req, res){
     res.sendFile( 'index.js', {root: '\scripts'} );
 });
 
+// router.get('/manifest.json', function(req, res){
+//     res.sendFile( 'manifest.json', {root: '\public\icons'} );
+// });
 
 module.exports = router;
